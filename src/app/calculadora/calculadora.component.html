@@ -1,0 +1,36 @@
+<input type="hidden">
+<div class="calculadora">
+    <h1>Calculadora</h1>
+    <p id="resultado" > {{input}} </p>
+    <p id="resultado" > {{result}} </p>
+    <table>
+        <tr>
+            <td><button class="botao" (click)="clearAll()">C</button></td>
+            <td><button class="botao" (click)="backSpace()"><</button></td>
+            <td><button class="botao" (click)="insertOperator('/')">/</button></td>
+            <td><button class="botao" (click)="insertOperator('*')">X</button></td>
+        </tr>
+        <tr>
+            <td><button class="botao" (click)="insertNumber('7')">7</button></td>
+            <td><button class="botao" (click)="insertNumber('8')">8</button></td>
+            <td><button class="botao" (click)="insertNumber('9')">9</button></td>
+            <td><button class="botao" (click)="insertOperator('-')">-</button></td>
+        </tr>
+        <tr>
+            <td><button class="botao" (click)="insertNumber('4')">4</button></td>
+            <td><button class="botao" (click)="insertNumber('5')">5</button></td>
+            <td><button class="botao" (click)="insertNumber('6')">6</button></td>
+            <td><button class="botao" (click)="insertOperator('+')">+</button></td>
+        </tr>
+        <tr>
+            <td><button class="botao" (click)="insertNumber('1')">1</button></td>
+            <td><button class="botao" (click)="insertNumber('2')">2</button></td>
+            <td><button class="botao" (click)="insertNumber('3')">3</button></td>
+            <td rowspan="2"><button class="botao" id="igual" (click)="getAnswer()">=</button></td>
+        </tr>
+        <tr>
+            <td colspan="2"><button class="botao" id="zero" (click)="insertNumber('0')">0</button></td>
+            <td><button class="botao" (click)="insertNumber('.')">.</button></td>
+        </tr>
+    </table>
+</div>
